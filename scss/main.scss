@@ -1,2 +1,24 @@
+//utils
+
 @import "./utils/vars";
-@import "./base/common"
+@import './utils/visually-hidden';
+@import './utils/placeholders';
+
+
+// base
+
+@import "./base/base";
+
+@import './base/reset';
+
+
+// components
+
+@import './components/buttons';
+@import './components/section';
+@import './components/conteiner';
+
+//layout
+
+@import "./layout/header";
+@import './layout/benefits';

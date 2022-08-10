@@ -1,0 +1,65 @@
+.header__conteiner {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  margin-right: 93px;
+}
+.header__nav {
+  margin-right: auto;
+}
+.header__list {
+  display: flex;
+  gap: 50px;
+}
+
+.header__email:hover {
+  color: #2196f3;
+}
+.header__email {
+  color: #757575;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__phone {
+  color: #757575;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__phone:hover,
+.header__phone:focus {
+  color: #2196f3;
+  fill: currentColor;
+}
+
+
+.header__item--studio {
+  color: #212121;
+}
+.header__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+  display: block;
+}
+
+.header {
+  color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid #ececec;
+}

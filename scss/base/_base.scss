@@ -1,6 +1,8 @@
 body {
   font-family: "Roboto", sans-serif;
-}
-.no-scroll {
+
+ &.no-scroll {
   overflow: hidden;
+}
+
 }

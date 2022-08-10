@@ -22,37 +22,40 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="conteiner header-conteiner">
-        <a class="logo link" href="./index.html"
-          >Web<span class="header-logo">Studio</span></a
+    
+    <header class="header" data-header>
+      <div class="conteiner header__conteiner">
+        <a class="logo header__logo1 link" href="./index.html"
+          >Web<span class="header__logo">Studio</span></a
         >
-        <nav class="header-nav">
-          <ul class="header-list list">
-            <li class="header-item">
-              <a class="nav-item nav-item-current link" href="./index.html"
+        
+         <nav class="nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a class="nav__link nav__link--current link" href="./index.html"
                 >Студия</a
               >
             </li>
-            <li class="header-item">
-              <a class="nav-item link" href="./portfolio.html">Портфолио</a>
+            <li class="nav__item">
+              <a class="nav__link link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="header-item">
-              <a class="nav-item link" href="#contacts">Контакты</a>
+            <li class="nav__item">
+              <a class="nav__link link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="header-contacts list flex-nav">
-          <li class="header-item">
-            <a class="header-email link" href="mailto:info@devstudio.com">
+        <!-- header-contacts -->
+        <ul class="header__contacts list nav--flex">
+          <li class="header__item">
+            <a class="header__email link" href="mailto:info@devstudio.com">
               <svg class="envelope-icons" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="header-item">
-            <a class="header-phone link" href="tel:+380961111111">
+          <li class="header__item">
+            <a class="header__phone link" href="tel:+380961111111">
               <svg class="smartphone-icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
@@ -64,29 +67,31 @@
       </div>
     </header>
     <main>
-      <section class="section-hero">
+      <!-- section-hero -->
+      <section class="hero">
         <div class="conteiner">
-          <h1 class="hero-title">
+          <h1 class="hero__title">
             Эффективные решения<br />
             для вашего бизнеса
           </h1>
-          <button class="hero-button" type="button" data-modal-open>
+          <button class="hero__button btn" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
       </section>
-      <section class="section section-benefits">
-        <div class="conteiner">
+      <!-- section benefits -->
+      <section class=" section benefits">
+        <div class="conteiner benefits__conteiner">
           <h2 class="visually-hidden">work</h2>
-          <ul class="benefits-inner-list list">
-            <li class="benefits-item">
-              <div class="benefits-wrap">
-                <svg class="benefits-icon" width="70" height="70">
+          <ul class="benefits__list list">
+            <li class="benefits__item">
+              <div class="benefits__wrap">
+                <svg class="benefits__icon" width="70" height="70">
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
               </div>
-              <h3 class="title-work">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-              <p class="text-work">
+              <h3 class="benefits__title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+              <p class="benefits__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
@@ -130,6 +135,7 @@
           </ul>
         </div>
       </section>
+      <!-- section-work -->
       <section class="section work">
         <div class="conteiner">
           <h3 class="title-about">Чем мы занимаемся</h3>
@@ -172,6 +178,7 @@
           </ul>
         </div>
       </section>
+      <!-- section-team -->
       <section class="section section-team">
         <div class="conteiner">
           <h3 class="title-about">Наша команда</h3>
@@ -443,6 +450,7 @@
           </ul>
         </div>
       </section>
+      <!-- section clients -->
       <section class="section cliens">
         <div class="conteiner">
           <h4 class="title-clients">Постоянные клиенты</h4>
@@ -481,6 +489,7 @@
         </div>
       </section>
     </main>
+    <!-- footer -->
     <footer class="footer">
       <div class="conteiner footer-conteiner">
         <div class="footer-left">
@@ -511,6 +520,7 @@
             </ul>
           </address>
         </div>
+        <!-- footer-right -->
         <div class="footer-right">
           <h2 class="join-text">присоединяйтесь</h2>
           <ul class="footer-list list">
@@ -560,6 +570,7 @@
             </li>
           </ul>
         </div>
+        <!-- footer-subscribe -->
         <div class="footer-subscribe">
           <h2 class="subscribe-text">Подпишитесь на рассылку</h2>
           <form class="footer-form" name="footer-form">
@@ -583,7 +594,7 @@
         </div>
       </div>
     </footer>
-
+<!-- modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
