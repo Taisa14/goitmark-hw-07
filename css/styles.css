@@ -339,10 +339,10 @@ p {
   | section-work
   |============================
 */
-.section.work {
+.work {
   padding-top: 0;
 }
-.title-about {
+.work__title {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -351,15 +351,15 @@ p {
   color: var(--title-text-color);
   margin-bottom: 50px;
 }
-.image-list {
+.work__list {
   display: flex;
   gap: 30px;
 }
 
-.image-item {
+.work__item {
   position: relative;
 }
-.img-title-overlay {
+.work__title--overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -371,7 +371,7 @@ p {
   align-items: center;
   justify-content: center;
 }
-.img-title {
+.work__title--img {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -385,23 +385,32 @@ p {
   | section-team
   |============================
 */
-.section-team {
+.team {
   background-color: #f5f4fa;
 }
-.team-list {
+ .team__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+.team__list {
   display: flex;
   justify-content: space-between;
 }
-.team-item {
+.team__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
 }
-.team-content {
+.team__content {
   padding: 30px 10px;
 }
-.title-name {
+.team__title--name {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -409,7 +418,7 @@ p {
   text-align: center;
   margin-bottom: 10px;
 }
-.text-profession {
+.team__text--profession {
   font-size: 16px;
   line-height: calc(18 / 16);
   letter-spacing: 0.03em;
@@ -417,13 +426,13 @@ p {
   text-align: center;
   margin-bottom: 30px;
 }
-.socials {
+.team__socials {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
-.socials-link {
+.team__socials--link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -437,12 +446,12 @@ p {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.socials-link:hover,
-.socials-link:focus {
+.team__socials--link:hover,
+.team__socials--link:focus {
   color: #ffffff;
   background-color: #2196f3;
 }
-.socials-icon {
+.team__socials--icon {
   fill: currentcolor;
 }
 
