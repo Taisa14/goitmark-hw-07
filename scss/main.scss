@@ -1,15 +1,10 @@
-//utils
-
-@import "./utils/vars";
-@import './utils/visually-hidden';
-@import './utils/placeholders';
-
 
 // base
 
-@import "./base/base";
+@import './base/base';
 
 @import './base/reset';
+
 
 
 // components
@@ -20,7 +15,16 @@
 
 //layout
 
-@import "./layout/header";
+@import './layout/header';
+@import './layout/nav';
 @import './layout/benefits';
 @import './layout/team';
 @import './layout/clients';
+@import './layout/footer';
+@import './layout/modal-window';
+
+//utils
+
+@import "./utils/vars";
+@import './utils/visually-hidden';
+@import './utils/placeholders';
