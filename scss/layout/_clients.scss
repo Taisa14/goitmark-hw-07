@@ -1,0 +1,38 @@
+.clients__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: calc(42 / 36);
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 50px;
+}
+.clients__list {
+  display: flex;
+  gap: 30px;
+}
+.clients__item {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+  cursor: pointer;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients__item:hover {
+  border-color: #2196f3;
+  color: #2196f3;
+}
+.clients__icon.current {
+  caret-color: var(--accent-color);
+}
+.clients__icon {
+  fill: currentColor;
+}
