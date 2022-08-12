@@ -1,19 +1,24 @@
-.header{
+.header {
+    background-color: var(--light-bg-cl);
 
-            padding-top: 32px;
-            padding-bottom: 32px;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: calc(16 / 14);
-            letter-spacing: 0.02em;
-            color: var(--title-text-color);
-            border-bottom: 1px solid #ececec;
-            display: block;
-        
+    &__container {
+        @extend %container;
+        display: flex;
+        align-items: center;
+    }
 
-            background-color: var(--light-bg-cl);}
 
- &__conteiner {
-    display: flex;
-    align-items: center;
+    &__logo {
+        margin-right: 93px;
+        font-size: 26px;
+        line-height: 1.19em;
+        font-family: 'Raleway';
+        font-weight: 700;
+        color: #000000;
+    }
+}
+
+.header__border {
+    border-bottom: 1px solid #ECECEC;
+
 }

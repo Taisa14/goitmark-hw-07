@@ -14,6 +14,10 @@
   | components
   |============================
 */
+@import "./components/logo";
+@import "./components/logotype";
+@import "./components/title";
+@import "./components/button";
 
 /**
   |============================
@@ -23,12 +27,21 @@
 
 
 @import "./layout/header";
-
-
+@import "./layout/navigation";
+@import "./layout/hero";
 
 /**
   |============================
   | utils
   |============================
 */
+
 @import "./utils/placeholders";
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+
+/**
+  |============================
+  | fotos
+  |============================
+*/

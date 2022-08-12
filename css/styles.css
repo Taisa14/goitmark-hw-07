@@ -102,15 +102,15 @@ p {
   |============================
 */
 
-/* .header-conteiner {
+/* .header__container {
     display: flex;
     align-items: center;
-} */
-
-.logo__link {
-    margin-right: 93px;
 }
 
+.header__logo {
+    margin-right: 93px;
+} */
+/* 
 .nav {
     margin-right: auto;
 }
@@ -158,16 +158,16 @@ p {
     color: #2196f3;
 }
 
-.header__contacts--list nav--flex {
+.nav__list-contacts list {
     display: flex;
     margin-left: auto;
 }
 
-.header__email:hover {
+.nav__link-contacts:hover {
     color: #2196f3;
 }
 
-.header__email {
+.nav__link-contacts {
     color: #757575;
     display: flex;
     align-items: center;
@@ -177,7 +177,7 @@ p {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__phone {
+.nav__item-contacts {
     color: #757575;
     display: flex;
     align-items: center;
@@ -187,21 +187,21 @@ p {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__phone:hover,
-.header__phone:focus {
+.nav__item-contacts:hover,
+.nav__item-contacts:focus {
     color: #2196f3;
     fill: currentColor;
 }
 
-.smartphone-icon {
+.nav-icon {
     fill: currentColor;
 }
 
-.envelope-icons:hover {
+.nav-icon:hover {
     fill: currentcolor;
 }
 
-.envelope-icons {
+.nav-icon {
     fill: currentcolor;
 }
 
@@ -224,7 +224,7 @@ p {
 .header--no-transparency {
     background-color: rgb(25, 28, 38, 0.5);
     backdrop-filter: blur(4px);
-}
+} */
 
 /**
   |============================
@@ -232,15 +232,18 @@ p {
   |============================
 */
 
-.logo__link {
+/* .header__logo {
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     color: #2196f3;
 }
+.header__border {
 
-.header__logo {
+border-bottom: 1px solid #ECECEC;}
+
+.logo-accent {
     color: var(--primery-black-color);
 }
 
@@ -254,7 +257,7 @@ p {
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     color: #757575;
-}
+} */
 
 /**
   |============================
@@ -266,48 +269,46 @@ p {
   | section hero
   |============================
 */
-.hero {
-    background-position: center;
-    max-width: 1600px;
-
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-left: auto;
-    margin-right: auto;
+/* .hero {
     padding: 200px 0;
-    text-align: center;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/fon.jpg);
+        margin-left: auto;
+        margin-right: auto;
+        width: 1600px;
+        height: 600px;
+        border: 1px solid #000000;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: var(--dark-bg-cl);
 }
 
 .hero__title {
-    font-weight: 900;
     font-size: 44px;
-    line-height: calc(60 / 44);
-    letter-spacing: 0.06em;
-    text-align: center;
-    color: var(--primery-white-color);
-    text-transform: uppercase;
-    margin-bottom: 30px;
+        font-weight: 900;
+        line-height: 1.36em;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--txt-color);
+        width: 696px;
+        margin: auto;
+        margin-bottom: 30px;
 }
 
 .btn {
-    max-width: 250px;
-    min-width: 200px;
-    min-height: 50px;
-    padding: 9px 31px;
-    letter-spacing: 0.03em;
-    align-self: center;
-    font-family: 'Roboto', sans-serif;
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30 / 16);
-    background-color: #2196f3;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
-}
+    width: 200px;
+        height: 50px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        color: var(--txt-color);
+        border-radius: 4px;
+        background-color: var(--accent-txt-cl);
+        border: none;
+        cursor: pointer;
+        transition: background-color var(--animation), box-shadow var(--animation);
+} */
 
 /**
   |============================
