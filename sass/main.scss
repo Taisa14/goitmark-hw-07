@@ -14,7 +14,7 @@
   | components
   |============================
 */
-@import "./components/logo";
+
 @import "./components/logotype";
 @import "./components/title";
 @import "./components/button";
@@ -29,6 +29,7 @@
 @import "./layout/header";
 @import "./layout/navigation";
 @import "./layout/hero";
+@import "./layout/benefits";
 
 /**
   |============================

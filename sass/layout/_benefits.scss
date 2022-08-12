@@ -1,0 +1,14 @@
+.benefits {
+    display: flex;
+    gap: 30px;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+}
+    &__item {
+        width: 270px;
+        height: 251px;
+    }
+   
+}

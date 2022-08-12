@@ -51,6 +51,16 @@ img {
   margin-bottom: 50px;
 }
 
+.benefits__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+}
+
 .btn {
   width: 200px;
   height: 50px;
@@ -218,6 +228,24 @@ img {
   width: 696px;
   margin: auto;
   margin-bottom: 30px;
+}
+
+.benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.benefits__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.benefits__item {
+  width: 270px;
+  height: 251px;
 }
 
 /**
