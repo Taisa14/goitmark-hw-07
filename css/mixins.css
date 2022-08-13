@@ -1,3 +1,13 @@
+/**
+  |============================
+  | sections
+  |============================
+*/
+/**
+  |============================
+  | benefits wrap
+  |============================
+*/
 .benefits__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,6 +25,11 @@
   margin-top: 30px;
 }
 
+/**
+  |============================
+  | benefits icon
+  |============================
+*/
 .benefits-icon {
   display: -webkit-box;
   display: -ms-flexbox;

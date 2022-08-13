@@ -366,7 +366,7 @@ border-bottom: 1px solid #ECECEC;}
   | section-work
   |============================
 */
-.work {
+/* .work {
     padding-top: 0;
 }
 
@@ -410,26 +410,21 @@ border-bottom: 1px solid #ECECEC;}
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
-}
+} */
 
-/**
-  |============================
-  | section-team
-  |============================
-*/
+
+ 
+  /**
+    |============================
+    | section team
+    |============================
+  */
+
+
 .team {
-    background-color: #f5f4fa;
+    background-color: #F5F4FA;
 }
 
-.team__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: calc(42 / 36);
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: var(--title-text-color);
-    margin-bottom: 50px;
-}
 
 .team__list {
     display: flex;
@@ -447,39 +442,39 @@ border-bottom: 1px solid #ECECEC;}
     padding: 30px 10px;
 }
 
-.team__title--name {
+.title__name {
     font-weight: 500;
     font-size: 16px;
-    line-height: calc(19 / 16);
+    line-height: calc(19/16);
     color: #212121;
     text-align: center;
     margin-bottom: 10px;
 }
 
-.team__text--profession {
+.text__profession {
     font-size: 16px;
-    line-height: calc(18 / 16);
+    line-height: calc(18/16);
     letter-spacing: 0.03em;
     color: #757575;
     text-align: center;
     margin-bottom: 30px;
 }
 
-.team__socials {
+.socials__list {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
 
-.team__socials--link {
+.socials__link {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 44px;
     height: 44px;
-    color: #afb1b8;
-    background-color: #ffffff;
+    color: #AFB1B8;
+    background-color: #FFFFFF;
     border-radius: 50%;
     cursor: pointer;
     transition-property: color, background-color;
@@ -487,16 +482,15 @@ border-bottom: 1px solid #ECECEC;}
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team__socials--link:hover,
-.team__socials--link:focus {
-    color: #ffffff;
-    background-color: #2196f3;
+.socials__link:hover,
+.socials__link:focus {
+    color: #FFFFFF;
+    background-color: #2196F3
 }
 
-.team__socials--icon {
+.socials__icon {
     fill: currentcolor;
 }
-
 /**
   |============================
   | section clients

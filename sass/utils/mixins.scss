@@ -1,7 +1,18 @@
+/**
+  |============================
+  | sections
+  |============================
+*/
+
 @mixin section($padding-top: 94px, $padding-bottom: 94px) {
     padding-top: $padding-top;
     padding-bottom: $padding-bottom;
 }
+/**
+  |============================
+  | benefits wrap
+  |============================
+*/
 .benefits__wrap {
     display: flex;
     align-items: center;
@@ -12,6 +23,12 @@
     margin-bottom: 30px;
     margin-top: 30px;
 }
+/**
+  |============================
+  | benefits icon
+  |============================
+*/
+
 .benefits-icon {
  display: flex;
  align-items: center;
