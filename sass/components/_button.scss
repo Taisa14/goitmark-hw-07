@@ -28,3 +28,32 @@
     }
         
 }
+/**
+  |============================
+  | footer-button
+  |============================
+*/
+.footer__button {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  color: var(--primery-white-color);
+  background-color: #2196f3;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  padding: 10px 28px;
+  border-radius: 4px;
+  gap: 10px;
+}
+
+.footer__button--icon {
+  width: 24px;
+  height: 24px;
+
+  fill: currentcolor;
+}
