@@ -1,5 +1,89 @@
 /**
   |============================
+  | utils
+  |============================
+*/
+.header__container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+:root {
+  /*text colors*/
+  --secondary-txt-cl: #757575;
+  --accent-txt-cl: #2196F3;
+  --txt-color: #FFFFFF;
+  --animation: transition-property: color, background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --main-txt-cl: #212121;
+  /*background colors*/
+  --dark-bg-cl: #2F303A;
+  --light-bg-cl: #FFFFFF;
+  /*others*/
+}
+
+.visualy-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+/**
+  |============================
+  | benefits wrap
+  |============================
+*/
+.benefits__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+/**
+  |============================
+  | benefits icon
+  |============================
+*/
+.benefits-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70px;
+  height: 70px;
+}
+
+/**
+  |============================
   | base
   |============================
 */
@@ -38,58 +122,6 @@ img {
   | components
   |============================
 */
-.logo-accent {
-  color: var(--accent-txt-cl);
-}
-
-.title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16em;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-}
-
-/**
-  |============================
-  | section benefits
-  |============================
-*/
-.benefits__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1428571429;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--title-text-color);
-  margin-bottom: 10px;
-}
-
-/**
-  |============================
-  | section team
-  |============================
-*/
-.team__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: var(--title-text-color);
-  margin-bottom: 50px;
-}
-
-.team__title--name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.1875;
-  color: #212121;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
 /**
   |============================
   | btn hero
@@ -122,6 +154,10 @@ img {
           box-shadow: 0px 4px rgba(0, 0, 0, 0.15);
 }
 
+.logo-accent {
+  color: var(--accent-txt-cl);
+}
+
 /**
   |============================
   | section benefits
@@ -135,18 +171,28 @@ img {
   color: var(--primary-text-color);
 }
 
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
 /**
   |============================
-  | section team
+  | section benefits
   |============================
 */
-.team__text--profession {
-  font-size: 16px;
-  line-height: 1.125;
+.benefits__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.03em;
-  color: #757575;
-  text-align: center;
-  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
 }
 
 /**
@@ -357,63 +403,53 @@ img {
   color: #ffffff;
 }
 
-/**
-  |============================
-  | utils
-  |============================
-*/
-.header__container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+.team__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1666666667;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 50px;
 }
-
-:root {
-  /*text colors*/
-  --secondary-txt-cl: #757575;
-  --accent-txt-cl: #2196F3;
-  --txt-color: #FFFFFF;
-  --animation: 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  --main-txt-cl: #212121;
-  /*background colors*/
-  --dark-bg-cl: #2F303A;
-  --light-bg-cl: #FFFFFF;
-  /*others*/
-}
-
-.visualy-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  margin: -1px;
-}
-
-.benefits__wrap {
+.team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 120px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.team__item {
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
+}
+
+.team__content {
+  padding: 30px 10px;
+}
+
+.title__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1875;
+  color: #212121;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.text__profession {
+  font-size: 16px;
+  line-height: 1.125;
+  letter-spacing: 0.03em;
+  color: #757575;
+  text-align: center;
   margin-bottom: 30px;
-  margin-top: 30px;
 }
 
-.benefits-icon {
+.socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,12 +459,80 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 70px;
-  height: 70px;
+  gap: 10px;
 }
 
-/**
-  |============================
-  | fotos
-  |============================
-*//*# sourceMappingURL=main.css.map */
+.socials__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.socials__link:hover, .socials__link:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+.socials__icon {
+  fill: currentcolor;
+}
+
+.clients__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1666666667;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 50px;
+}
+.clients__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.clients__item {
+  width: 170px;
+  height: 92px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  color: #AFB1B8;
+  cursor: pointer;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients__item:hover {
+  border-color: #2196F3;
+  color: #2196F3;
+}/*# sourceMappingURL=main.css.map */

@@ -1,3 +1,14 @@
+/**
+  |============================
+  | utils
+  |============================
+*/
+
+@import "./utils/placeholders";
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/mixins.scss";
+
 
 /**
   |============================
@@ -14,40 +25,28 @@
   | components
   |============================
 */
-
-@import "./components/logotype";
-@import "./components/title";
 @import "./components/button";
+@import "./components/logotype";
 @import "./components/text";
-@import "./components/team-socials";
+@import "./components/title";
+
+
+
+
+
 
 /**
   |============================
   | layout
   |============================
 */
-
-
 @import "./layout/header";
 @import "./layout/navigation";
 @import "./layout/hero";
 @import "./layout/benefits";
 @import "./layout/section-work";
-@import "./layout/section-team";
+@import "./layout/team";
+@import "./layout/clients";
 
-/**
-  |============================
-  | utils
-  |============================
-*/
 
-@import "./utils/placeholders";
-@import "./utils/variables";
-@import "./utils/visually-hidden";
-@import "./utils/mixins.scss";
 
-/**
-  |============================
-  | fotos
-  |============================
-*/

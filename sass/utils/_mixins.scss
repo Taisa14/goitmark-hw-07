@@ -1,15 +1,5 @@
 /**
   |============================
-  | sections
-  |============================
-*/
-
-@mixin section($padding-top: 94px, $padding-bottom: 94px) {
-    padding-top: $padding-top;
-    padding-bottom: $padding-bottom;
-}
-/**
-  |============================
   | benefits wrap
   |============================
 */
@@ -35,3 +25,5 @@
  justify-content: center;
  width: 70px;
  height: 70px;}
+
+ 
