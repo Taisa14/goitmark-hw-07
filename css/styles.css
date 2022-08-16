@@ -592,7 +592,7 @@ padding-top: 0;
   color: #2196f3;
 } */
 
-.footer-right {
+/* .footer-right {
   margin-left: 70px;
 }
 
@@ -636,7 +636,7 @@ padding-top: 0;
 .footer-right__social-icon {
   width: 20px;
   height: 20px;
-}
+} */
 
 /**
   |============================
@@ -644,7 +644,7 @@ padding-top: 0;
   |============================
 */
 
-.footer__subscribe {
+/* .footer__subscribe {
   margin-left: auto;
 }
 
@@ -703,7 +703,7 @@ padding-top: 0;
   height: 24px;
 
   fill: currentcolor;
-}
+} */
 
 /**
   |============================
@@ -927,7 +927,7 @@ padding-top: 0;
   | portolio
   |============================
 */
-.portfolio-categories-list {
+ /* .portfolio-categories__list {
   display: flex;
   gap: 8px;
   justify-content: center;
@@ -965,7 +965,7 @@ padding-top: 0;
   box-shadow: 0px 3px 1px rgb(0 0 0/10%), 0px 1px 2px rgb(0 0 0/8%), 0px 2px 2px rgb(0 0 0/12%);
 }
 
-.portfolio-list {
+.portfolio__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -987,20 +987,23 @@ padding-top: 0;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio--projects__wrap {
+.projects-wrap {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio--projects__wrap:hover .overlay {
+.projects-wrap:hover .overlay {
   transform: translateY(0);
   overflow: hidden;
 }
 
-.portfolio__overlay {
+.overlay {
+
   position: absolute;
   top: 0;
   left: 0;
+
+
 
   width: 100%;
   height: 100%;
@@ -1011,28 +1014,30 @@ padding-top: 0;
   align-items: center;
   justify-content: center;
 
-  background-color: #2196f3e5;
+  background-color: #2196F3E5;
+
 
   transform: translateY(100%);
 
   transition: transform 500ms ease-in-out;
+
 }
 
-.portfolio__overlay--text {
-  color: #ffffff;
+.overlay-text {
+  color: #FFFFFF;
   font-size: 18px;
   line-height: calc(28 / 18);
   letter-spacing: 0.03em;
   user-select: none;
 }
 
-.portfolio__work {
+.portfolio--work {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
 }
 
-.portfolio__title {
+.portfolio--work__title {
   margin-bottom: 4x;
 
   font-weight: 700px;
@@ -1042,7 +1047,7 @@ padding-top: 0;
   color: var(--title-text-color);
 }
 
-.portfolio__text {
+.portfolio--work__text {
   font-weight: 400;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -1052,4 +1057,4 @@ padding-top: 0;
 
 .visually-hidden {
   display: none;
-}
+} */
