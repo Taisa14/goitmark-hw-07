@@ -1,0 +1,122 @@
+.backdrop.is--hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(0);
+
+    padding: 40px;
+    width: 528px;
+    min-height: 581px;
+    background-color: var(--primery-white-color);
+    border-radius: 4px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+   .backdrop.is--hidden .modal & {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.3) rotate(1turn);
+    }
+}
+
+.register__form--group {
+    margin-bottom: 25px;}
+
+.register__form--wrap {
+    position: relative;
+    display: block;
+    margin-bottom: 12px;
+    &:focus-within {
+            fill: #2196f3;
+            transition-property: color, background-color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        &:last-child {
+            margin-bottom: 0;
+        }
+}
+
+.register__form--label {
+    display: block;
+    text-align: left;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: #757575;
+}
+.register__form--input {
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    padding: 10px;
+    padding-left: 40px;
+    border-radius: 4px;
+
+    outline: transparent;
+}
+
+.register__form--icon {
+    position: absolute;
+    bottom: 11px;
+    left: 12px;
+}
+.register__form--message {
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    padding: 10px;
+    padding-left: 40px;
+    border-radius: 4px;
+
+    outline: transparent;}
+.register__form--agreement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+.register__form {
+    text-align: center;
+}
+
+.register__form--title {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.register__form--message {
+    padding: 12px 16px;
+    height: 120px;
+    resize: none;
+}
+
+.register__form--message::placeholder {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: rgb(117, 117, 117, 0.5);
+}
+
+
+
+.register__form--agreement-text {
+    font-size: 14px;
+    user-select: none;
+    text-underline-position: under;
+}
+
+.register__form--agreement-link {
+    color: #2196f3;
+}
+
