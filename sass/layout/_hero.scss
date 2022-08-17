@@ -1,29 +1,49 @@
 .hero {
-    &__container {
-        padding: 200px 0;
-        margin-left: auto;
-        margin-right: auto;
-        width: 1600px;
-        height: 600px;
-        border: 1px solid #000000;
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: var(--dark-bg-cl);
-    }
-
-    &__title {
-        font-size: 44px;
-        font-weight: 900;
-        line-height: 1.36em;
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: var(--txt-color);
-        width: 696px;
-        margin: auto;
-        margin-bottom: 30px;
-    }
-
     
+
+    background-position: center;
+    max-width: 1600px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 200px 0;
+    text-align: center;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/fon.jpg);
+    ;
+
+
+
+ &__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60/44);
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--primery-white-color);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+ &__button {
+    max-width: 250px;
+    min-width: 200px;
+    min-height: 50px;
+    padding: 9px 31px;
+    letter-spacing: 0.03em;
+    align-self: center;
+    font-family: "Roboto", sans-serif;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    background-color: #2196f3;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
 }

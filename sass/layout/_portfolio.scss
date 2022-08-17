@@ -1,4 +1,8 @@
+.portfolio {
+    @extend%container;
+}
 .portfolio__list {
+    
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -50,7 +54,7 @@
     }
 }
 
-portfolio__wrap {
+.portfolio__wrap {
 
     position: relative;
     overflow: hidden;

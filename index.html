@@ -23,53 +23,45 @@
     
   </head>
   <body>
-   <header class="header header__border" data-header>
-      <div class="container header__container">
-        <a class="link header__logo" href="./index.html"
-          >Web<span class="logo-accent">Studio</span></a
-        >
-        <nav class="nav">
-          <ul class="nav__list list">
-            <li class="nav__item">
-              <a class="nav__link nav__link--current link" href="./index.html"
-                >Студия</a
-              >
-            </li>
-            <li class="nav__item">
-              <a class="nav__link link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link link" href="#contacts">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- header-contacts -->
-        
-        <ul class="nav__list-contacts list">
-          <li class="nav__item-contacts">
-            <a class="nav__link-contacts link" href="mailto:info@devstudio.com">
-              <svg class="nav__icon" width="16" height="12">
-                <use href="./images/icons.svg#envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="nav__item-contacts">
-            <a class="nav__link-contacts link" href="tel:+380961111111">
-              <svg class="nav__icon" width="16" height="12">
-                <use href="./images/icons.svg#smartphone"></use>
-              </svg>
+<header class="header">
+  <div class="container header__container">
+    <a class="header__web link" href="./index.html">Web<span class="header__studio">Studio</span></a>
+    <nav class="nav">
+      <ul class="nav__list list">
+        <li class="nav__item">
+          <a class="nav__item nav__item--current link" href="./index.html">Студия</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link link" href="./portfolio.html">Портфолио</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link link" href="#contacts">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="header-contacts__list list flex--nav">
+      <li class="header__item">
+        <a class="header-email__link link" href="mailto:info@devstudio.com">
+          <svg class="envelope-icons" width="16" height="12">
+            <use href="./images/icons.svg#envelope"></use>
+          </svg>
+          info@devstudio.com</a>
+      </li>
+      <li class="header__item">
+        <a class="header-phone__link link" href="tel:+380961111111">
+          <svg class="smartphone-icon" width="10" height="16">
+            <use href="./images/icons.svg#smartphone"></use>
+          </svg>
 
-              +38 099 111 11 11</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header>
+          +38 099 111 11 11</a>
+      </li>
+    </ul>
+  </div>
+</header>
     <main>
       <!-- section-hero -->
-      <section class="hero">
-        <div class="hero__container">
+      <section class="section hero">
+        <div class="container">
           <h1 class="hero__title">
             Эффективные решения<br />
             для вашего бизнеса
@@ -80,8 +72,8 @@
         </div>
       </section>
       <!-- section benefits -->
-      <section class="benefits">
-        <div class="benefits">
+      <section class="section benefits">
+        <div class="container benefits">
           <h2 class="visually-hidden">work</h2>
           <ul class="benefits__list list">
             <li class="benefits__item">
@@ -137,8 +129,8 @@
       </section>
       <!-- section-work -->
       <section class="section work">
-        <div class="work__container">
-          <h3 class="title">Чем мы занимаемся</h3>
+        <div class="work">
+          <h3 class="work__title">Чем мы занимаемся</h3>
 
           <ul class="work__list list">
             <li class="work__item">
@@ -179,8 +171,8 @@
         </div>
       </section>
       <!-- section-team -->
-      <section class="team">
-        <div class="container">
+      <section class="section team">
+        <div class="team">
           <h3 class="team__title">Наша команда</h3>
           <ul class="team__list list">
             <li class="team__item">
@@ -351,8 +343,8 @@
         </div>
       </section>
       <!-- section clients -->
-      <section class="cliens section">
-        <div class="container">
+      <section class="section cliens">
+        <div class="clients">
           <h4 class="clients__title">Постоянные клиенты</h4>
           <ul class="clients__list list">
             <li class="clients__item">
@@ -391,7 +383,7 @@
     </main>
     <!-- footer -->
     <footer class="footer">
-      <div class="conteiner footer__container">
+      <div class="container footer__container">
         <div class="footer__left">
           <a href="./index.html" class="footer__logo"
             ><span class="footer__web">Web</span>Studio</a

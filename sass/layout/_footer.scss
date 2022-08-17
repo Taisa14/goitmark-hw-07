@@ -6,6 +6,7 @@
 
 
  &__container {
+    @extend %container;
     display: flex;
     align-items: baseline;
     gap: 30px;}
@@ -55,7 +56,11 @@
     color: #2196f3;
         }
 }
-
+.footer__address--link:hover,
+.footer__address--link:focus {
+    color: #2196f3;
+}
+ 
 /**
   |============================
   | footer-right
@@ -65,8 +70,6 @@
 
 .footer--right {
     
-
-
 &__text {
     margin-bottom: 20px;
     font-weight: 700;
@@ -99,7 +102,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0s;
     &:hover,
-        &:hover:focus {
+    &:focus {
             background-color: var(--accent-color);
         }
 }

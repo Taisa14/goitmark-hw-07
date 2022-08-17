@@ -24,7 +24,7 @@
   <body>
     <header class="header header__border" data-header>
       <div class="container header__container">
-        <a class="link header__logo" href="./index.html">Web<span class="logo-accent">Studio</span></a>
+        <a class="header__web link" href="./index.html">Web<span class="header__studio">Studio</span></a>
         <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
@@ -33,23 +33,23 @@
               >
             </li>
             <li class="nav__item">
-              <a class="nav__link nav__link--current link" href="./portfolio.html">Портфолио</a>
+              <a class="nav__item nav__item--current link" href="./portfolio.html">Портфолио</a>
             </li>
              <li class="nav__item">
                 <a class="nav__link link" href="#contacts">Контакты</a>
               </li>
               </ul>
               </nav>
-        <ul class="nav__list-contacts list">
-          <li class="nav__item-contacts">
-            <a class="nav__link-contacts link" href="mailto:info@devstudio.com">
+        <ul class="header-contacts__list list flex--nav">
+          <li class="header__item">
+            <a class="header-email__link link" href="mailto:info@devstudio.com">
               <svg class="nav__icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com</a>
           </li>
-          <li class="nav__item-contacts">
-            <a class="nav__link-contacts link" href="tel:+380961111111">
+          <li class="header__item">
+            <a class="header-phone__link link" href="tel:+380961111111">
               <svg class="nav__icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
@@ -61,7 +61,7 @@
         </header>
         <main>
       <section class="section portfolio">
-        <div class="conteiner">
+        <div class="portfolio">
           <h1 class="visually-hidden">Портфолио</h1>
           <ul class="portfolio-categories__list list">
             <li class="portfolio-categories__item">
