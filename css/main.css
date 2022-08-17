@@ -236,11 +236,14 @@ img {
   | layout
   |============================
 */
-.container {
+.container-header {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header {
@@ -560,8 +563,9 @@ img {
   color: #ffffff;
 }
 
-.section {
+.section-team {
   padding: 94px 0;
+  background-color: #F5F4FA;
 }
 
 .container {
