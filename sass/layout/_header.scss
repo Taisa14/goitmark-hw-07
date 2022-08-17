@@ -1,12 +1,16 @@
 
-.header__container {
-    display: flex;
-        align-items: center;
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+   
 }
 
 .header {
     
-    @extend%container;
+   
     color: #212121;
     font-weight: 500;
     font-size: 14px;

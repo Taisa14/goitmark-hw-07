@@ -3,13 +3,6 @@
   | utils
   |============================
 */
-.portfolio, .footer__container, .clients, .team, .work, .benefits, .hero, .header {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
 /*text colors*/
 :root {
   --primary-text-color: #757575;
@@ -243,13 +236,11 @@ img {
   | layout
   |============================
 */
-.header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .header {
@@ -362,22 +353,6 @@ img {
   gap: 50px;
 }
 
-.nav__item {
-  display: block;
-  padding: 32px 0;
-  -webkit-transition-property: color, background-color;
-  transition-property: color, background-color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
-}
-.nav__item:hover, .nav__item:focus {
-  color: #2196F3;
-}
-
 .nav__link--current {
   color: #2196f3;
   position: relative;
@@ -413,6 +388,17 @@ img {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   display: block;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.nav__link:hover, .nav__link:focus {
+  color: #2196F3;
 }
 
 .hero {
@@ -454,6 +440,17 @@ img {
   color: #ffffff;
   border: none;
   cursor: pointer;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .benefits {
@@ -506,9 +503,18 @@ img {
   color: var(--primary-text-color);
 }
 
-.work {
+.section {
+  padding: 94px 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
   padding-top: 0;
 }
+
 .work__title {
   font-weight: 700;
   font-size: 36px;
@@ -552,6 +558,17 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .team__title {
@@ -645,6 +662,17 @@ img {
   fill: currentcolor;
 }
 
+.section {
+  padding: 94px 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 .clients__title {
   font-size: 36px;
   font-weight: 700;
@@ -694,6 +722,13 @@ img {
 
 .clients__icon {
   fill: currentColor;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .footer {
@@ -871,6 +906,17 @@ img {
   line-height: 1.25;
   letter-spacing: 0.03em;
   outline: transparent;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .portfolio__list {
