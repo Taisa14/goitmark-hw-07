@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
@@ -26,7 +26,7 @@ body {
 
 .no-scroll {
   overflow: hidden;
-}
+} */
 
 /**
   |============================
@@ -151,7 +151,7 @@ p {
   color: #2196f3;
 }
 
-.nav-item.nav-item-current::after {
+.nav__link--current::after {
   content: '';
   position: absolute;
   bottom: 0px;
@@ -163,7 +163,7 @@ p {
   border-radius: 2px;
   background-color: #2196f3;
 }
-.nav__item.nav__item--current {
+.nav__link--current {
   position: relative;
   color: #2196f3;
 }
@@ -716,12 +716,14 @@ padding-top: 0;
   pointer-events: initial;
 
   transition: opacity 600ms ease-out, visibility 600ms ease-out;
+
 }
 
 .backdrop.is--hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+
 }
 
 .modal {
@@ -736,7 +738,8 @@ padding-top: 0;
   background-color: var(--primery-white-color);
   border-radius: 4px;
 
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   opacity: 1;
 }
 
@@ -764,7 +767,7 @@ padding-top: 0;
 }
 
 .modal__btn--icon:hover {
-  fill: #2196f3;
+  fill: #2196F3;
 }
 
 .register__form {
@@ -788,13 +791,15 @@ padding-top: 0;
   position: relative;
   display: block;
   margin-bottom: 12px;
+
 }
 
 .register__form--wrap:focus-within {
-  fill: #2196f3;
+  fill: #2196F3;
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .register__form--wrap:last-child {
@@ -849,8 +854,9 @@ padding-top: 0;
   margin-bottom: 30px;
 }
 
-.register__checkbox:checked + .register_icon .register__icon--uncheck {
+.register__checkbox:checked+.register_icon .register_icon--uncheck {
   opacity: 0;
+
 }
 
 .register__icon--uncheck {
@@ -859,17 +865,19 @@ padding-top: 0;
 
 .register__icon--check {
   opacity: 0;
-  fill: #2196f3;
+  fill: #2196F3;
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
-.register__checkbox:checked + .register__icon .register__icon--check {
+.register__checkbox:checked+.register__icon .register__icon--check {
   opacity: 1;
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .register__form--agreement-text {
@@ -896,7 +904,7 @@ padding-top: 0;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
-  background-color: #2196f3;
+  background-color: #2196F3;
   border: none;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   border-radius: 4px;

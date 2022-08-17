@@ -69,6 +69,7 @@
 
 
 .footer--right {
+    margin-left: 70px;
     
 &__text {
     margin-bottom: 20px;
@@ -78,7 +79,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primery-white-color);
-    margin-left: 70px;
+    
 }
 
 &__list {
