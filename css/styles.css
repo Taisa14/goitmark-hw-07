@@ -101,7 +101,7 @@ p {
   | header
   |============================
 */
-.header__container {
+/* .header__container {
   display: flex;
   align-items: center;
 }
@@ -241,13 +241,8 @@ p {
   fill: currentcolor;
 }
 
-.header-contacts-list {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
-  color: #757575;
-}
+
+} */
 
 /**
   |============================
@@ -259,7 +254,7 @@ p {
   | section hero
   |============================
 */
-.hero {
+/* .hero {
 
   background-position: center;
   max-width: 1600px;
@@ -305,7 +300,7 @@ p {
   color: #ffffff;
   border: none;
   cursor: pointer;
-}
+} */
 
 /**
   |============================

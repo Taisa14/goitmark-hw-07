@@ -1,4 +1,65 @@
 
+/**
+  |============================
+  | header navigation
+  |============================
+*/
+.nav {
+    margin-right: auto;
+}
+
+
+.nav__list {
+    display: flex;
+    gap: 50px;
+}
+
+
+
+.nav__item {
+    display: block;
+    padding: 32px 0;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
+
+    &:hover,
+    &:focus {
+        color: #2196F3;
+    }
+}
+
+.nav__item.nav__item--current::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #2196F3;
+
+    .nav__item.nav__item--current {
+        position: relative;
+        color: #2196F3;
+    }
+}
+
+
+
+.nav__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+    display: block;
+}
     
 
 

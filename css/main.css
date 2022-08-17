@@ -3,7 +3,7 @@
   | utils
   |============================
 */
-.portfolio, .footer__container, .clients, .team, .work, .benefits, .header {
+.portfolio, .footer__container, .clients, .team, .work, .benefits, .hero, .header {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -362,6 +362,15 @@ img {
   | layout
   |============================
 */
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .header {
   color: #212121;
   font-weight: 500;
@@ -386,6 +395,81 @@ img {
   color: var(--primery-black-color);
 }
 
+.header-contacts__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+.flex__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+.header-email__link {
+  color: #757575;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-email__link:hover {
+  color: #2196f3;
+}
+
+.header-phone__link {
+  color: #757575;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-phone__link:hover, .header-phone__link:focus {
+  color: #2196f3;
+  fill: currentColor;
+}
+
+.smartphone-icon {
+  fill: currentColor;
+}
+
+.envelope-icons:hover {
+  fill: currentcolor;
+}
+
+.envelope-icons {
+  fill: currentcolor;
+}
+
+/**
+  |============================
+  | header navigation
+  |============================
+*/
 .nav {
   margin-right: auto;
 }
@@ -412,7 +496,8 @@ img {
 .nav__item:hover, .nav__item:focus {
   color: #2196F3;
 }
-.nav__item .nav__item.nav__item--current::after .nav__item {
+
+.nav__item.nav__item--current::after {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -423,7 +508,7 @@ img {
   border-radius: 2px;
   background-color: #2196F3;
 }
-.nav__item .nav__item .nav__item.nav__item--current::after .nav__item.nav__item-current .nav__item .nav__item.nav__item--current::after .nav__item {
+.nav__item.nav__item--current::after .nav__item.nav__item--current {
   position: relative;
   color: #2196F3;
 }
